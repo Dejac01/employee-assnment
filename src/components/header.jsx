@@ -1,9 +1,11 @@
 import React from 'react'
 
-function header() {
+function Header(props) {
   return (
-    <div>header</div>
+    <div className="skull">
+      {props.passedProp}
+    </div>
   )
 }
 
-export default header
+export default Header

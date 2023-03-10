@@ -1,9 +1,20 @@
 import React from 'react'
 
-function employees(props) {
+import EmployeeListItem from './EmployeeListItem'
+
+function EmployeeList(props) {
+  console.log(props)
   return (
-    <div>employees</div>
+    <div>
+      <EmployeeListItem individualWorker={props.workers.james}/>
+      <EmployeeListItem individualWorker={props.workers.julie}/>
+      <EmployeeListItem individualWorker={props.workers.eugene}/>
+      <EmployeeListItem individualWorker={props.workers.john}/>
+      <EmployeeListItem individualWorker={props.workers.ray}/>
+      <EmployeeListItem individualWorker={props.workers.paul}/>
+      
+    </div>
   )
 }
 
-export default employees
+export default EmployeeList
