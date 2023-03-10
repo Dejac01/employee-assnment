@@ -14,13 +14,14 @@ function App() {
       <div className="mainContainer">
         <Homepage staff={workers} yourTitle={titles.homepage}/>
         <EmployeePage staff={workers} yourTitle={titles.epage}/>
-      </div>
-{/*       
+        </div>
+     
       <EmployeeList />
       <Header />
       <SearchBar />
-      <EmployeeListItem /> */}
+      <EmployeeListItem /> 
     </div>
+    
   );
 }
 export default App;
